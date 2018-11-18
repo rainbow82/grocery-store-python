@@ -16,3 +16,10 @@ for key in prices:
     print key
     print "price %s" % prices[key]
     print "stock %s" % stock[key]
+
+total = 0
+for key in prices:
+  print prices[key] * stock[key]
+  temp_total = prices[key] * stock[key]
+  total = total + temp_total
+print total
